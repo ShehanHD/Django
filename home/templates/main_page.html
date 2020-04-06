@@ -1,0 +1,67 @@
+{% extends "index.html" %} {% load static %}
+<!-- includes -->
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/main_page.css' %}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{% static 'js/main_page.js' %}"></script>
+{% endblock link %}
+<!-- add styles -->
+
+{% block main_page %}
+<link href="https://fonts.googleapis.com/css?family=Playball|Yellowtail&display=swap" rel="stylesheet" />
+<div id="site" class="site jumbotron bg-dark">
+	<header class="header">
+		<h1 class="textHF">WeCode</h1>
+	</header>
+	<div class="mainDiv time"><h3 id="time"></h3></div>
+	<div class="mainDiv date"><h3 id="date"></h3></div>
+	<div class="mainDiv framework">
+		<img
+			src="https://img.freepik.com/free-vector/modern-dark-texture-background_1035-11632.jpg?size=626&ext=jpg"
+			alt="languages"
+		/>
+		<h1 class="text">FRAMEWORK</h1>
+	</div>
+	<div class="mainDiv languages">
+		<img
+			src="https://img.freepik.com/free-vector/modern-dark-texture-background_1035-11632.jpg?size=626&ext=jpg"
+			alt="languages"
+		/>
+		<h1 class="text">LANGUAGES</h1>
+	</div>
+	<div class="mainDiv libraries">
+		<img
+			src="https://img.freepik.com/free-vector/modern-dark-texture-background_1035-11632.jpg?size=626&ext=jpg"
+			alt="languages"
+		/>
+		<h1 class="text">LIBRARIES</h1>
+	</div>
+	<div class="mainDiv projects">
+		<img
+			src="https://img.freepik.com/free-vector/modern-dark-texture-background_1035-11632.jpg?size=626&ext=jpg"
+			alt="languages"
+		/>
+		<h1 class="text">PROJECTS</h1>
+	</div>
+	<div class="mainDiv tasks">
+		<img
+			src="https://img.freepik.com/free-vector/modern-dark-texture-background_1035-11632.jpg?size=626&ext=jpg"
+			alt="languages"
+		/>
+		<h1 class="text">TASKS</h1>
+	</div>
+	<div class="mainDiv youTube">
+		<img src="https://static.techspot.com/images2/news/bigimage/2017/04/2017-04-14-image-13.jpg" alt="languages" />
+	</div>
+	<div class="mainDiv faceBook rounded">
+		<img src="https://img.freepik.com/free-vector/modern-dark-texture-background_1035-11632.jpg?size=626&ext=jpg" alt="languages" />
+		<h3 class="text">FACEBOOK</h3>
+	</div>
+	<div class="mainDiv instagram">
+		<img src="https://img.freepik.com/free-vector/modern-dark-texture-background_1035-11632.jpg?size=626&ext=jpg" alt="languages" />
+		<h3 class="text">INSTAGRAM</h3>
+	</div>
+	<footer class="footer"><h1 class="textHF">FOOTER</h1></footer>
+</div>
+{% endblock main_page %}

@@ -1,0 +1,154 @@
+@media (min-width: 1801px) {
+    .site {
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        grid-template-rows: repeat(15, 50px);
+        grid-gap: 15px;
+        grid-template-areas: ". header header header header ." ". header header header header ." ". framework framework languages languages ." ". framework framework languages languages ." ". framework framework languages languages ." ". framework framework languages languages ." ". framework framework languages languages ." ". time libraries projects . ." ". . libraries projects . ." ". date libraries projects . ." ". . tasks youTube faceBook ." ". . tasks youTube  . ." ". . tasks youTube instagram ." ". footer footer footer footer ." ". footer footer footer footer .";
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1800px) {
+    .site {
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        grid-template-rows: repeat(15, 50px);
+        grid-gap: 15px;
+        grid-template-areas: "header header header header header header" "header header header header header header" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "time libraries libraries projects projects date" ". libraries libraries projects projects ." ". libraries libraries projects projects ." "tasks tasks youTube youTube faceBook faceBook" "tasks tasks youTube youTube . ." "tasks tasks youTube youTube instagram instagram" "footer footer footer footer footer footer" "footer footer footer footer footer footer";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .site {
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        grid-template-rows: repeat(12, 50px);
+        grid-gap: 15px;
+        grid-template-areas: "header header header header header header" "header header header header header header" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "framework framework framework languages languages languages" ". libraries libraries projects projects ." "time libraries libraries projects projects date" "tasks tasks youTube youTube faceBook faceBook" "tasks tasks youTube youTube instagram instagram" "footer footer footer footer footer footer" "footer footer footer footer footer footer";
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .site {
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        grid-template-rows: repeat(12, 50px);
+        grid-gap: 15px;
+        grid-template-areas: "header header header header header header" "header header header header header header" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "time libraries libraries projects projects date" ". libraries libraries projects projects ." "tasks tasks youTube youTube faceBook faceBook" "tasks tasks youTube youTube instagram instagram" "footer footer footer footer footer footer" "footer footer footer footer footer footer";
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .site {
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        grid-template-rows: repeat(12, 50px);
+        grid-gap: 15px;
+        grid-template-areas: "header header header header header header" "header header header header header header" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "framework framework framework languages languages languages" "time time libraries libraries projects projects" "date date libraries libraries projects projects" "tasks tasks youTube youTube faceBook faceBook" "tasks tasks youTube youTube instagram instagram" "footer footer footer footer footer footer" "footer footer footer footer footer footer";
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .site {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat(22, 50px);
+        grid-gap: 15px;
+        grid-template-areas: "header" "header" "framework" "framework" "languages" "languages" "time" "date" "libraries" "libraries" "projects" "projects" "tasks" "tasks" "youTube" "youTube" "faceBook" "instagram" "footer" "footer";
+    }
+}
+
+.mainDiv {
+    position: relative;
+    border: 5px rgb(183, 191, 230);
+    box-shadow: 6px 6px 21px rgba(0, 0, 0, 1);
+    border-style: outset;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "." "text" ".";
+}
+
+header, footer {
+    border: 5px rgb(183, 191, 230);
+    box-shadow: 6px 6px 21px rgba(0, 0, 0, 1);
+    border-style: outset;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3, 2fr);
+    grid-template-areas: "." "textHF" ".";
+}
+
+img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h3{
+    color:white;
+}
+
+.textHF {
+    color: rgb(183, 191, 230);
+    grid-area: textHF;
+    font-family: 'Yellowtail', cursive;
+}
+
+.text {
+    color: rgb(183, 191, 230);
+    font-weight: bold;
+    z-index: 5;
+    grid-area: text;
+    font-family: 'Playball', cursive;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.framework {
+    grid-area: framework;
+}
+
+.languages {
+    grid-area: languages;
+}
+
+.time {
+    grid-area: time;
+}
+
+.date {
+    grid-area: date;
+}
+
+.libraries {
+    grid-area: libraries;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.faceBook {
+    grid-area: faceBook;
+}
+
+.tasks {
+    grid-area: tasks;
+}
+
+.youTube {
+    grid-area: youTube;
+}
+
+.instagram {
+    grid-area: instagram;
+}
+
+.footer {
+    grid-area: footer;
+}

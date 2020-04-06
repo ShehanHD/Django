@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+
+{% block reg_log %}
+<div id='divRegis' class="card container text-center" style=" border-radius: 20px;">
+    <div class="card-header rounded-pill">
+        REGISTRATION
+    </div>
+    <div class="card-body">
+        <form action="createUser" method="POST">
+            {% csrf_token %}
+            <input class="rounded-pill mb-1 text-center" type="text" name="name" id="name" placeholder="name">
+            <input class="rounded-pill mb-1 text-center" type="text" name="surname" id="surname"
+                placeholder="surname"><br>
+            <input class="rounded-pill mb-1 text-center" type="email" name="email" id="email" placeholder="e-mail"><br>
+            <input class="rounded-pill mb-1 text-center" type="password" name="password1" id="password1"
+                placeholder="password"> <br>
+            <input class="rounded-pill mb-1 text-center" type="password" name="password2" id="password2"
+                placeholder="repeat password"> <br>
+            <button type="submit" class="btn btn-light rounded-pill" id="register">SUBMIT</button>
+        </form>
+    </div>
+</div>
+{% endblock reg_log %}

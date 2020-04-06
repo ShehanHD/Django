@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block reg_log %}
+<div class="card container text-center" style=" border-radius: 20px;">
+    <div class="card-header rounded-pill">
+        REGISTRATION
+    </div>
+    <div class="card-body">
+        <input class="rounded-pill mb-1 text-center" type="email" name="emailLogin" id="emailLogin"
+            placeholder="e-mail"><br>
+        <input class="rounded-pill mb-1 text-center" type="password" name="passwordLogin" id="passwordLogin"
+            placeholder="password"> <br>
+        <button class="btn btn-light rounded-pill" id="register">SUBMIT</button>
+    </div>
+</div>
+{% endblock reg_log %}
