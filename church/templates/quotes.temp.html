@@ -1,0 +1,55 @@
+{% extends "basic.temp.html" %} {% block quotes %}
+
+<h3 class="title bg-secondary">Quotes</h3>
+
+<!-- TODO get data from data base  -->
+<ul style="list-style: none;" class="menu">
+	<li>
+		<label>Service</label>
+
+		<select class="form-control rounded-pill" name="" id="">
+			<option value="">aaa</option>
+			<option value="">aaa</option>
+		</select>
+	</li>
+	<li class="filter">
+		<input class="form-control btn btn-sm rounded-pill bg-primary" type="button" value="filter" />
+	</li>
+	<li>
+		<div id="google_translate_element"></div>
+	</li>
+</ul>
+
+<article class="quotes">
+	{% for q in quotes %}
+
+	<div class="card mb-3 container rounded">
+		<div class="card-title row bg-info rounded">
+			<div class="col">
+				<h4 class="card-title">
+					{{ q.book }} {{ q.verse }} : {{ q.fro }} {% if q.to %} - {{ q.to }}
+					{% else %} {% endif %}
+				</h4>
+			</div>
+			<div class="col">
+				<h4 class=" float-right">services<sub>date</sub></h4>
+			</div>
+		</div>
+		<div class="card-body">
+				<p class="card-text">{{ q.quote | safe }}</p>
+		</div>
+	</div>
+	{% endfor %}
+</article>
+
+<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+	}
+</script>
+
+<script
+	type="text/javascript"
+	src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+></script>
+{% endblock quotes %}
